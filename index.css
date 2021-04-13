@@ -1,0 +1,91 @@
+@media screen and (min-width: 700px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: #f2f2f2;
+        margin: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    nav {
+        background-color: #fafafa;
+        display: flex;
+        height: 4em;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    nav > div {
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 2.4em;
+    }
+
+    nav > div > a > span {
+        background-image: linear-gradient(45deg, #f3ec78, #af4261);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    nav > div:nth-child(1) {
+        margin-right: auto;
+        margin-left: 30px;
+    }
+
+    nav > div:nth-child(2) {
+        margin-right: 30px;
+        font-size: 1.6em;
+        background-image: linear-gradient(transparent calc(60%), #bada55 5px);
+        color: #212121;
+        transition: 0.3s ease-in-out;
+        background-size: 0;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        font-family: 'Brygada 1918', serif;
+    }
+
+    nav > div:nth-child(2):hover {
+        background-size: 100%;
+    }
+
+    .container {
+        display: flex;
+        height: 92vh;
+    }
+
+    .container__half {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+
+    .container__half > a {
+        text-align: center;
+        width: 100%;
+        margin-top: 30px;
+        font-size: 2em;
+        font-family: 'Red Hat Display', sans-serif;
+        height: 80px;
+        z-index: 2;
+    }
+
+    #half-left {
+        background-image: linear-gradient(0deg, #bada55, #fafafa);
+    }
+
+    #half-left > a {
+        color: #212121;
+
+    }
+
+    #half-right {
+        background-image: linear-gradient(0deg, #1d1075, #fafafa);
+    }
+
+    #half-right > a {
+        color: #212121;
+    }
+}
+
